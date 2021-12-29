@@ -10,15 +10,19 @@ p - Paragraph
 ## Syntax:
 
 Comments: 
+```HTML
+<--! text -->
+```
 
-`<--! text -->`
 
 img - element used to add images
 
 alt - attribute for img element incase the image does not load this text is displayed. This also helps increase accessibility to screen readers.
 
 Format:
-`<img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">`
+```HTML
+<img src="https://www.freecatphotoapp.com/your-image.jpg" alt="A business cat wearing a necktie.">
+```
 
 src - source of an element
 
@@ -29,12 +33,14 @@ Anchor element (a)
 <a href = "link"> text to be hyperlinked </a>
 
 Internal Hyperlink:
-
-`<a href = "#id"> Text to be hyperlinked </a> `
+```HTML
+<a href = "#id"> Text to be hyperlinked </a>
+```
 
 Open in New Tab: 
-
-`target="_blank"`
+```HTML
+target="_blank"
+```
 
 Dead Link:
 
@@ -70,7 +76,7 @@ Placeholder For Input:
 
 Submit Input Data:
 ```HTML
-<form action = "/url-where-you-want-to-submit-form-data" >
+<form action = "/url-where-you-want-to-submit-form-data">
   <input>
 </form>
 ```
@@ -79,6 +85,29 @@ Submit Button:
 ```HTML
 <button type = "submit"> this button submits the form </button>
 ```
+
+**Require Submission**:
+```HTML
+<input type = "text" required>
+```
+
+Radio Buttons:
+```HTML
+<label for="outdoor">
+<input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+</label>
+```
+
+Checkboxes:
+```HTML
+<label for = "test"><input id="test" type="checkbox" name="test" > Test1 </label>
+```
+
+**Note:** You can assign a value to an input by typing
+```HTML
+<input id = "x" value = "assigned value"> 
+```
+
 
 
 ## Tags:

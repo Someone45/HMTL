@@ -1,4 +1,3 @@
-2
 ## Types of Headings:
 h1 - Main Headings
 

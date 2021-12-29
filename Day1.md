@@ -71,7 +71,7 @@ Input Elements (Text Type):
 
 Placeholder For Input:
 ```HTML
-<input type = "text" placeholder = "This is placeholder Text">
+<input type = "text" placeholder = "This is placeholder text">
 ```
 
 Submit Input Data:
@@ -101,6 +101,11 @@ Radio Buttons:
 Checkboxes:
 ```HTML
 <label for = "test"><input id="test" type="checkbox" name="test" > Test1 </label>
+```
+
+Pre-Checked Checkboxes:
+```HTML
+<input type = "radio" name = "test-name" checked>
 ```
 
 **Note:** You can assign a value to an input by typing

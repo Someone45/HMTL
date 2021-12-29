@@ -140,3 +140,16 @@ The two main types of length units are absolute and relative. Absolute units tie
 
 Relative units, such as `em` or `rem`, are relative to another length value. For example, `em` is based on the size of an element's font. If you use it to set the `font-size` property itself, it's relative to the parent's `font-size`.
 
+### Global Variables (Root)
+When you create your variables in `:root` they will set the value of that variable for the whole page.
+
+You can then over-write these variables by setting them again within a specific element.
+
+### Text-Align
+`text-align: justify;` spaces the text so that each line has equal width.
+
+`text-align: center;` centers the text
+
+`text-align: right;` right-aligns the text
+
+And `text-align: left;` (the default) left-aligns the text.

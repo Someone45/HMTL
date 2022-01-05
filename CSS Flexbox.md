@@ -44,3 +44,41 @@ CSS also has options for the direction of the wrap:
 ```
 
 ## Flex-Shrink
+```CSS
+<style>
+#item{
+flex-shrink: #;
+}
+</style>
+```
+Controls the size of items as the container shrinks
+
+## Flex-Grow
+```CSS
+<style>
+#item{
+flex-grow: #;
+}
+</style>
+```
+
+Opposite of `flex-shrink`, controls the size of the items as the container expands
+
+## Flex for Initial Size of an Item
+```CSS
+<style>
+#item{
+flex-basis: 10px;
+}
+
+</style>
+```
+
+## Shortcut Flex Property
+ The default property settings are `flex: 0 1 auto;`
+ 
+ `flex: flex-grow flex-shrink flex-basis;`
+ 
+ You can use this to assign values without having to insert a lot 
+ 
+ 

@@ -81,4 +81,29 @@ flex-basis: 10px;
  
  You can use this to assign values without having to insert a lot 
  
+ ## Rearrange Items
+ ```CSS
+ <style> 
+#box1{
+order: #;
+}
+</style>
+ ```
  
+ The `order` property is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.
+ 
+ ## align-self Property
+ This is useful since other common adjustment techniques using the CSS properties `float`, `clear`, and `vertical-align` do not work on flex items.
+ 
+ `align-self` accepts the same values as `align-items` and will override any value set by the `align-items` property.
+ 
+ ```CSS
+<style>
+#box1{
+align-self: center;
+}
+</style>
+ ```
+ 
+**Center can be replaced with any other setting**
+

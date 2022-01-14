@@ -90,3 +90,61 @@ In CSS Grid, the content of each item is located in a box which is referred to a
 **`justify-self` is used for horizontral aligning while `align-self` is used for vertical alignment.** 
 
 To do multiple items you use `justify-items` and `align-items`
+
+## Divide the Grid Into an Area Template
+You can group cells of your grid together into an area and give the area a custom name. Do this by using `grid-template-areas` on the container like this:
+
+```css
+grid-template-areas:
+  "header header header"
+  "advert content content"
+  "advert footer footer";
+```
+
+The code above groups the cells of the grid into four areas; `header`, `advert`, `content`, and `footer`. Every word represents a cell and every pair of quotation marks represent a row.
+
+## Place Items in Grid Areas
+```CSS
+.item1{
+	grid-area: header;
+}
+```
+
+Place an item in your custom area by referencing the name you gave it.
+
+## Use grid-area Without Creating an Areas Template
+
+```CSS
+item{ grid-area: 1/1/2/4; }
+```
+
+AKA 
+
+```css
+grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;
+```
+
+## Reduce Repetition Using the repeat Function
+```CSS
+grid-template-rows: repeat(100, 50px);
+grid-template-columns: repeat(100,50px);
+```
+or
+```css
+grid-template-columns: repeat(2, 1fr 50px) 20px;
+```
+which translates into 
+```css
+grid-template-columns: 1fr 50px 1fr 50px 20px;
+```
+
+## Limit Item Size Using the minmax Function
+There's another built-in function to use with `grid-template-columns` and `grid-template-rows` called `minmax`. It's used to limit the size of items when the grid container changes size. To do this you need to specify the acceptable size range for your item. Here is an example:
+
+```css
+grid-template-columns: 100px minmax(50px, 200px);
+```
+
+In the code above, `grid-template-columns` is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
+
+## Create Flexible Layouts Using auto-fill
